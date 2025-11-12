@@ -6,7 +6,10 @@
 # Fastfetch
 # -----------------------------------------------------
 if [[ $(tty) == *"pts"* ]]; then
-    fastfetch --config examples/13
+    fastfetch --config examples/16
+    #fastfetch --kitty-direct /home/bytrayed/.config/zshrc/logos/.png
+
+
 else
     echo
     if [ -f /bin/hyprctl ]; then
