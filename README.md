@@ -30,7 +30,7 @@ cd ~/.config
 ### 2. Clonar este repositorio
 
 ```bash
-git clone <URL_DEL_REPOSITORIO>
+git clone https://github.com/danycode-dev/zshrc.git
 ```
 
 Luego entrar al directorio:
