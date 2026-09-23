@@ -1,12 +1,3 @@
-#            _
-#    _______| |__  _ __ ___
-#   |_  / __| '_ \| '__/ __|
-#  _ / /\__ \ | | | | | (__
-# (_)___|___/_| |_|_|  \___|
-#
-# -----------------------------------------------------
-# ML4W zshrc loader
-# -----------------------------------------------------
 
 # DON'T CHANGE THIS FILE
 
@@ -21,9 +12,9 @@
 # -----------------------------------------------------
 
 for f in ~/.config/zshrc/*; do
-    if [ ! -d $f ]; then
-        c=`echo $f | sed -e "s=.config/zshrc=.config/zshrc/custom="`
-        [[ -f $c ]] && source $c || source $f
+    if [ ! -d "$f" ] && [ "$(basename "$f")" != "README.md" ]; then
+        c=$(echo "$f" | sed -e "s=.config/zshrc=.config/zshrc/custom=")
+        [[ -f "$c" ]] && source "$c" || source "$f"
     fi
 done
 
